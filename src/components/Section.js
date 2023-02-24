@@ -7,7 +7,7 @@ function Section({ title,desc,backgroundImg,link,leftbtn,rightbtn,arrow,range,sp
         <Wrapper bg={backgroundImg} >
             <ContentTop>
                 <h1>{title}</h1>
-                <p>{desc} <a href='#'>{link}</a></p>
+                <p>{desc}</p>
             </ContentTop>
 
             <div>
@@ -106,16 +106,18 @@ export const Wrapper = styled.div`
 
 export const ContentTop = styled.div`
     text-align: center;
-    padding-top: 16vh;
+    padding-top: 15vh;
     h1{
         font-weight: 400;
         letter-spacing: 0.5px;
         font-size: 2.5rem;
         color: var(--teslaColor);
+        margin-bottom: 10px ;
     }
     p{
-        font-size: 0.9rem;
-        padding: 5px;
+        font-size: 1.3rem;
+        margin-top: 0%;
+        padding: 0px;
         color: rgba(59, 59, 59, 0.753);
     }
     a{
